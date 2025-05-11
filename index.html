@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Discover São Paulo</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet" />
 </head>
+
 <body>
+  <!-- =======================
+       HEADER
+  ======================== -->
   <header>
     <div class="container">
       <h1 class="logo">Discover São Paulo</h1>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Stay</a></li>
+          <li><a href="stay.html">Stay</a></li>
           <li><a href="#">Do</a></li>
           <li><a href="#">Eat</a></li>
           <li><a href="#">Services</a></li>
@@ -24,68 +28,75 @@
     </div>
   </header>
 
+  <!-- =======================
+       HERO SECTION
+  ======================== -->
   <section class="hero">
     <div class="hero-text">
-      <h2>Explore the Heart of Brazil</h2>
-      <p>Unique places, experiences and tips to enjoy São Paulo like a local.</p>
-      <a href="#" class="btn">Start Exploring</a>
+      <h2>Explore the Concrete Jungle</h2>
+      <p>Unique places, great experiences and the best tips.</p>
+      <a href="#do" class="btn">Start Exploring</a>
     </div>
   </section>
 
-  <section class="highlights">
+  <!-- =======================
+       HIGHLIGHTS SECTION
+  ======================== -->
+  <section class="highlights" id="do">
     <h2>What to do in São Paulo</h2>
     <div class="highlight-grid">
+
+      <!-- Category: Culture -->
       <div class="highlight">
-        <img src="img/museum.jpeg" alt="Museum">
-        <h3>Culture & Museums</h3>
-        <p>Discover art, history and architecture across SP's top museums.</p>
+        <a href="culture.html" class="highlight">
+          <img src="img/museum.jpeg" alt="Museum">
+          <h3>Culture & Museums</h3>
+          <p>Discover art, history and architecture across SP's top museums.</p>
+        </a>
       </div>
+
+      <!-- Category: Neighborhoods -->
       <div class="highlight">
-        <img src="img/neighborhoods.png" alt="Neighborhoods">
-        <h3>Iconic Neighborhoods</h3>
-        <p>Walk around places like Liberdade, Vila Madalena and Jardins.</p>
+        <a href="neighborhoods.html" class="highlight">
+          <img src="img/neighborhoods.png" alt="Neighborhoods">
+          <h3>Iconic Neighborhoods</h3>
+          <p>Walk around places like Liberdade, Vila Madalena and Jardins.</p>
+        </a>
       </div>
+
+      <!-- Category: Experiences -->
       <div class="highlight">
-        <img src="img/experiences.jpg" alt="Local Experiences">
-        <h3>Experiences</h3>
-        <p>Local tours, street art, samba nights & more authentic ways to enjoy São Paulo.</p>
+        <a href="experiences.html" class="highlight">
+          <img src="img/experiences.jpg" alt="Local Experiences">
+          <h3>Experiences</h3>
+          <p>Local tours, street art, samba nights & more authentic ways to enjoy São Paulo.</p>
+        </a>
       </div>
+
+      <!-- Category: Nightlife -->
       <div class="highlight">
-        <img src="img/nightlife.jpeg" alt="Nightlife">
-        <h3>Nightlife</h3>
-        <p>Enjoy vibrant bars, rooftops and cultural venues all night long.</p>
+        <a href="nightlife.html" class="highlight">
+          <img src="img/nightlife.jpeg" alt="Nightlife">
+          <h3>Nightlife</h3>
+          <p>Enjoy vibrant bars, rooftops and cultural venues all night long.</p>
+        </a>
       </div>
+
+      <!-- Category: Parks -->
       <div class="highlight">
-        <img src="img/parks.webp" alt="Parks">
-        <h3>Parks & Outdoors</h3>
-        <p>Relax in Ibirapuera Park or explore hidden green corners.</p>
+        <a href="parks.html" class="highlight">
+          <img src="img/parks.webp" alt="Parks">
+          <h3>Parks & Outdoors</h3>
+          <p>Relax in Ibirapuera Park or explore hidden green corners.</p>
+        </a>
       </div>
+
     </div>
   </section>
 
-<!--
-  <section class="experiences">
-    <h2>Unique Experiences</h2>
-    <div class="experience-grid">
-      <div class="experience">
-        <img src="img/food-tour.jpg" alt="Food Tour">
-        <h3>São Paulo Food Tour</h3>
-        <p>Explore traditional Brazilian cuisine with a guided local food walk.</p>
-      </div>
-      <div class="experience">
-        <img src="img/street-art.jpg" alt="Street Art">
-        <h3>Street Art in Vila Madalena</h3>
-        <p>Discover graffiti and murals in the city’s most colorful neighborhood.</p>
-      </div>
-      <div class="experience">
-        <img src="img/samba-night.jpg" alt="Samba Night">
-        <h3>Live Samba Night</h3>
-        <p>Enjoy live music and dance with locals in authentic samba venues.</p>
-      </div>
-    </div>
-  </section>
--->
-
+  <!-- =======================
+       FOOTER
+  ======================== -->
   <footer>
     <p>© 2025 Discover São Paulo. All rights reserved.</p>
   </footer>
