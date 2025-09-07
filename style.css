@@ -217,7 +217,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 360px;
+  min-height: 315px;
 }
 
 .category-card:hover {
