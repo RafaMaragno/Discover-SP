@@ -183,7 +183,7 @@ nav a:hover {
    ==================================================== */
 .stay-intro {
   background-color: #1f1f1f;
-  padding: 60px 20px 30px;
+  padding: 45px 15px 20px;
   text-align: center;
 }
 
@@ -199,7 +199,7 @@ nav a:hover {
 
 .stay-categories {
   background-color: #1f1f1f;
-  padding: 40px 20px 60px;
+  padding: 30px 20px 45px;
 }
 
 .stay-grid {
@@ -218,10 +218,13 @@ nav a:hover {
   flex-direction: column;
   justify-content: space-between;
   min-height: 315px;
+  text-decoration: none; /* remove sublinhado do link */
+  color: inherit;        /* mantém a cor original */
 }
 
 .category-card:hover {
   transform: scale(1.03);
+  background-color: #333;
 }
 
 .category-card img {
