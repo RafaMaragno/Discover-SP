@@ -291,3 +291,72 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* ====================================================
+   TRAVEL TIPS (vertical style)
+   ==================================================== */
+.travel-tips {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.travel-tips .tip {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.travel-tips .tip:last-child {
+  border-bottom: none;
+}
+
+.travel-tips h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.travel-tips h4 {
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.travel-tips p, 
+.travel-tips ul {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.category-card-tips {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  min-height: fit-content;
+  text-decoration: none; /* remove sublinhado do link */
+  color: inherit;        /* mantém a cor original */
+}
+
+.category-card-tips p {
+  margin-bottom: 20px; /* afasta o texto do botão */
+}
+
+/* Links apenas dentro dos artigos de Travel Tips */
+.tip-link-hotels {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.tip-link-hotels:hover {
+  color: #fff;
+}
