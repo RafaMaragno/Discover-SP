@@ -2,8 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Discover São Paulo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover São Paulo | Travel Guide for Foreign Visitors</title>
+  <meta name="description" content="Plan your trip to São Paulo with our travel guide for foreigners. Find where to stay, what to do, local services, nightlife, and authentic experiences." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Discover São Paulo | Travel Guide for Foreign Visitors" />
+  <meta property="og:description" content="Your essential guide to São Paulo: hotels, nightlife, culture, services, and experiences tailored for international travelers." />
+  <meta property="og:image" content="https://discover-saopaulo.com/img/sao-paulo-hero.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://discover-saopaulo.com/" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Discover São Paulo | Travel Guide for Foreign Visitors" />
+  <meta name="twitter:description" content="Plan your São Paulo trip with the best tips for hotels, culture, nightlife and local services." />
+  <meta name="twitter:image" content="https://discover-saopaulo.com/img/sao-paulo-hero.jpg" />  
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Discover São Paulo",
+    "url": "https://discover-saopaulo.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://discover-saopaulo.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
 </head>
@@ -14,14 +43,14 @@
   ======================== -->
   <header>
     <div class="container">
-      <h1 class="logo">
+      <p class="logo">
         <a href="index.html">Discover São Paulo</a>
-      </h1>
+      </p>
       <nav>
         <ul>
           <li><a href="stay.html">Stay</a></li>
-          <li><a href="travel-tips.html">Travel Tips</a></li>
           <li><a href="services.html">Services</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -33,7 +62,7 @@
   ======================== -->
   <section class="hero">
     <div class="hero-text">
-      <h2>Explore the Concrete Jungle</h2>
+      <h1>Explore the Concrete Jungle</h1>
       <p>Unique places, great experiences and the best tips.</p>
       <a href="#do" class="btn">Start Exploring</a>
     </div>

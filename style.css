@@ -84,6 +84,11 @@ nav a:hover {
   border-radius: 10px;
 }
 
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
 .hero-text h2 {
   font-size: 36px;
   margin-bottom: 15px;
@@ -187,7 +192,7 @@ nav a:hover {
   text-align: center;
 }
 
-.stay-intro h2 {
+.stay-intro h1 {
   font-size: 32px;
   margin-bottom: 15px;
 }
@@ -244,6 +249,19 @@ nav a:hover {
 .category-card p {
   color: #ccc;
   font-size: 14px;
+}
+
+/* ====================================================
+   SEÇÃO: SERVICES PAGE
+   ==================================================== */
+.services-intro {
+  background-color: #1f1f1f;
+  padding: 30px 10px 10px;
+  text-align: center;
+}
+
+.services-intro h1 {
+  font-size: 28px;
 }
 
 /* ====================================================
