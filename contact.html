@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Discover São Paulo</title>
+  <meta name="description" content="Get in touch with Discover São Paulo for partnership opportunities, travel tips, and support during your stay in São Paulo." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Us | Discover São Paulo" />
+  <meta property="og:description" content="Reach out to Discover São Paulo for inquiries, partnerships, or travel assistance." />
+  <meta property="og:image" content="https://discover-saopaulo.com/img/contact-cover.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://discover-saopaulo.com/contact.html" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | Discover São Paulo" />
+  <meta name="twitter:description" content="Contact Discover São Paulo for travel tips, services, and partnerships." />
+  <meta name="twitter:image" content="https://discover-saopaulo.com/img/contact-cover.jpg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Discover São Paulo",
+    "url": "https://discover-saopaulo.com/contact.html",
+    "about": "Contact page for Discover São Paulo travel guide",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "availableLanguage": ["English", "Portuguese"],
+      "url": "https://discover-saopaulo.com/contact.html"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <p class="logo">
+        <a href="index.html">Discover São Paulo</a>
+    </p>
+      <nav>
+        <ul>
+          <li><a href="stay.html">Stay</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="travel-tips.html">Travel Tips</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  <section class="stay-intro">
+    <h1>Contact Us</h1>
+    <p>Have questions about São Paulo or want to partner with us? Send us a message below.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="stay-categories">
+    <div class="contact-grid">
+      <!-- Email Card -->
+      <div class="category-card-email">
+        <h3>Send us a Message</h3>
+        <form action="mailto:your-email@discover-saopaulo.com" method="post" enctype="text/plain" class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+
+      <!-- WhatsApp Card -->
+      <div class="category-card-whats">
+        <h3>WhatsApp</h3>
+        <p>Prefer quick contact? Reach us via WhatsApp.</p>
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn" rel="noopener">Message on WhatsApp</a>
+    <!--<p style="font-size:12px; color:#aaa; margin-top:10px;">(WhatsApp number coming soon)</p>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Discover São Paulo. All rights reserved.</p>
+  </footer>
+</body>
+</html>

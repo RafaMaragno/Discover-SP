@@ -110,6 +110,9 @@ nav a:hover {
   border-radius: 6px;
   font-weight: bold;
   transition: background 0.3s;
+  font-family: 'Montserrat', sans-serif; /* força mesma fonte */
+  border: none; /* remove borda padrão de botão */
+  cursor: pointer; /* garante pointer no hover */
 }
 
 .btn:hover {
@@ -377,4 +380,87 @@ footer {
 
 .tip-link-hotels:hover {
   color: #fff;
+}
+
+/* ==========================================
+   CONTACT PAGE
+   ========================================== */
+.contact-grid {
+  display: flex;
+  flex-direction: column; /* força os cards em coluna */
+  gap: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  resize: none; /* impede redimensionamento manual */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #ffcc00;
+}
+
+.category-card-email {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: fit-content;
+  text-decoration: none; /* remove sublinhado do link */
+  color: inherit;        /* mantém a cor original */
+}
+
+.category-card-email h3 {
+  color: #ffcc00;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.category-card-email p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.category-card-whats {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 15px;
+  min-height: fit-content;
+  text-decoration: none; /* remove sublinhado do link */
+  color: inherit;        /* mantém a cor original */
+}
+
+.category-card-whats h3 {
+  color: #ffcc00;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.category-card-whats p {
+  margin-bottom: 20px; /* afasta o texto do botão */
 }
