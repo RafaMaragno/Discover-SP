@@ -143,10 +143,13 @@ nav a:hover {
 
 .highlight-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  max-width: 1100px;
-  margin: 0 auto;
+/*  grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+/*max-width: 1100px; */
+/*margin: 0 auto; */
+  justify-items: center;
 }
 
 .highlight {
@@ -168,8 +171,8 @@ nav a:hover {
 .highlight img,
 .category-card img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 220px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
   display: block;
@@ -469,7 +472,7 @@ footer {
    NEIGHBORHOODS PAGE (revisado)
    ==================================================== */
 
-.stay-intro {
+.neighborhoods-page .stay-intro {
   background-color: #1f1f1f;
   padding: 48px 10px 8px;
   text-align: center;
@@ -478,12 +481,12 @@ footer {
   align-items: center;
 }
 
-.stay-intro h1 {
+.neighborhoods-page .stay-intro h1 {
   font-size: 32px;
   margin-bottom: 12px;
 }
 
-.stay-intro p {
+.neighborhoods-page .stay-intro p {
   color: #ccc;
   font-size: 18px;
   line-height: 1.6;
@@ -496,32 +499,32 @@ footer {
 }
 
 @media (max-width: 992px) {
-  .stay-intro p {
+  .neighborhoods-page .stay-intro p {
     white-space: normal; /* volta a quebrar no mobile */
   }
 }
 
-.stay-categories .container {
+.neighborhoods-page .stay-categories .container {
   max-width: 100%; /* permite o grid ocupar toda a largura */
   padding: 0 40px; /* ajusta respiro nas bordas */
   box-sizing: border-box;
 }
 
-.stay-grid {
+.neighborhoods-page .stay-grid {
   justify-items: center; /* centraliza os cards dentro da célula */
   margin: 0 auto;
   width: 100%;
 }
 
 @media (min-width: 1200px) {
-  .stay-grid {
+  .neighborhoods-page .stay-grid {
     grid-template-columns: repeat(5, minmax(200px, 1fr));
     gap: 24px;
   }
 }
 
 /* --- Cards individuais --- */
-.category-card {
+.neighborhoods-page .category-card {
   background-color: #2a2a2a;
   border-radius: 10px;
   padding: 20px;
@@ -533,12 +536,12 @@ footer {
   min-height: 380px;
 }
 
-.category-card:hover {
+.neighborhoods-page .category-card:hover {
   transform: scale(1.03);
   background-color: #333;
 }
 
-.category-card img {
+.neighborhoods-page .category-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -546,13 +549,13 @@ footer {
   margin-bottom: 15px;
 }
 
-.category-card h3 {
+.neighborhoods-page .category-card h3 {
   color: #ffcc00;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-.category-card p {
+.neighborhoods-page .category-card p {
   color: #ccc;
   font-size: 14px;
   line-height: 1.5;
@@ -560,7 +563,7 @@ footer {
 }
 
 /* --- Botões --- */
-.category-card .btn {
+.neighborhoods-page .category-card .btn {
   flex: 1;
   background: #ccc;
   color: #1f1f1f;
@@ -576,18 +579,18 @@ footer {
   display: inline-block;
 }
 
-.category-card .btn:hover {
+.neighborhoods-page .category-card .btn:hover {
   background: #ffcc00;
   color: #000;
 }
 
-.category-card .btn:focus,
-.category-card .btn:active {
+.neighborhoods-page .category-card .btn:focus,
+.neighborhoods-page .category-card .btn:active {
   outline: none;
 }
 
 /* --- Agrupamento dos botões --- */
-.category-card > div:last-child {
+.neighborhoods-page .category-card > div:last-child {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -597,13 +600,13 @@ footer {
 
 /* --- Responsividade --- */
 @media (max-width: 992px) {
-  .stay-grid {
+  .neighborhoods-page .stay-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
-  .stay-grid {
+  .neighborhoods-page .stay-grid {
     grid-template-columns: 1fr;
   }
 }
