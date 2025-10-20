@@ -465,6 +465,11 @@ footer {
   margin-bottom: 20px; /* afasta o texto do botão */
 }
 
+.form-status {
+   margin-top: 15px;
+   color: #ffcc00;
+}
+
 /* ====================================================
    NEIGHBORHOODS PAGE (revisado)
    ==================================================== */

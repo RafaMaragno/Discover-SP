@@ -80,7 +80,7 @@
       <!-- Email Card -->
       <div class="category-card-email">
         <h3>Send us a Message</h3>
-        <form action="mailto:your-email@discover-saopaulo.com" method="post" enctype="text/plain" class="contact-form">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xeordorr" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
 
@@ -91,6 +91,8 @@
           <textarea id="message" name="message" rows="5" required></textarea>
 
           <button type="submit" class="btn">Send</button>
+
+          <p id="form-status"></p>
         </form>
       </div>
 
@@ -109,5 +111,6 @@
   <footer>
     <p>&copy; 2025 Discover São Paulo. All rights reserved.</p>
   </footer>
+  <script src="js/contact.js"></script>
 </body>
 </html>
