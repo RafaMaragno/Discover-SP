@@ -11,19 +11,26 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Open Graph / Twitter -->
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="Discover São Paulo">
   <meta property="og:title" content="Travel Tips for São Paulo — Discover São Paulo">
   <meta property="og:description" content="Essential tips for visiting São Paulo: safety, airport transfers, SIM cards, neighborhoods, nightlife, and more.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://discover-saopaulo.com/travel-tips.html">
   <meta property="og:image" content="https://discover-saopaulo.com/img/travel-tips-cover.jpg">
+  <meta property="og:image:alt" content="São Paulo city skyline travel tips">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@discoverSP" />
+  <meta name="twitter:title" content="Travel Tips for São Paulo — Discover São Paulo">
+  <meta name="twitter:description" content="Essential travel tips for visiting São Paulo: safety, airport transfers, SIM cards, neighborhoods, nightlife, and more.">
+  <meta name="twitter:image" content="https://discover-saopaulo.com/img/travel-tips-cover.jpg">
 
   <!-- JSON-LD FAQ structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://discover-saopaulo.com/travel-tips.html#faq",
     "mainEntity": [
       {
         "@type": "Question",
@@ -54,7 +61,7 @@
         "name": "How can I buy a SIM card in São Paulo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Prepaid SIMs are available from Vivo, TIM, and Claro at malls and kiosks (passport required). Travelers can also use eSIM services like Airalo or Yesim for easy activation."
+          "text": "Prepaid SIMs are available from Vivo, TIM, and Claro at malls and kiosks (passport required). Travelers can also use eSIM services like aloSIM for easy activation."
         }
       },
       {
@@ -92,9 +99,22 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-20X4Y5JJV8');
+    gtag('config', 'G-20X4Y5JJV8', { 'anonymize_ip': true });
+    // Track affiliate clicks for elements with .btn (helps you see which CTAs work)
+    document.addEventListener('DOMContentLoaded', function(){
+      var buttons = document.querySelectorAll('a.btn');
+      buttons.forEach(function(btn){
+        btn.addEventListener('click', function(e){
+          try{
+            gtag('event', 'affiliate_click', {
+              'event_category': 'Affiliate',
+              'event_label': btn.href
+            });
+          }catch(err){/* fail silently */}
+        });
+      });
+    });
   </script>
-  <link rel="canonical" href="https://discover-saopaulo.com/travel-tips.html" />
 </head>
 
 <body>
